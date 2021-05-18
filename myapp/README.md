@@ -1,5 +1,23 @@
 ## テスト
 
+## 設定
+1. git clone https://github.com/comee-system/RefeynOne.git
+1. composer update
+1. git pull origin main
+1. php artisan migrate
+
+## composer install
+1. cd www/
+1. mkdir bin
+1. cd bin/
+1. curl -sS https://getcomposer.org/installer | php -- --install-dir=bin --filename=composer
+
+
+### キャッシュ消す
+1. php artisan cache:clear
+1. php artisan config:clear
+1. php artisan route:clear
+1. php artisan view:clear
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>

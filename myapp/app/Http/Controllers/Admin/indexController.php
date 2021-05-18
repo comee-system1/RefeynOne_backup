@@ -9,7 +9,11 @@ class indexController extends Controller
 {
     //
     public function index(){
-        echo "test";
-        exit();
+
+        $hello = 'Hello,World!';
+        $hello_array = ['Hello', 'こんにちは', 'ニーハオ'];
+
+        return view('admin/index', compact('hello', 'hello_array'));
+
     }
 }
